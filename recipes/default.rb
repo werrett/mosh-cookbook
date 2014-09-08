@@ -27,6 +27,13 @@ configure_options = node['mosh']['configure_options']
 make_options      = node['mosh']['make_options']
 install_options   = node['mosh']['install_options']
 
+template '/etc/ufw/applications.d/mosh' do
+  source 'mosh.ufw.conf'
+  owner 'root'
+  group 'root'
+  mode  '0644'
+end
+
 bash "install_mosh" do
   cwd  ::File.dirname(src_filepath)
   user "root"

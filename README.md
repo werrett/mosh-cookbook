@@ -17,6 +17,9 @@ Requires the following packages on Ubuntu:
 
 Note: Only tested under Ubuntu 14.04 LTS 64-bit.
 
+# Todo
+
+  * Added Redhat support. And test before installing UFW config.
 
 # Attributes
 
